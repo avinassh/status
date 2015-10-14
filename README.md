@@ -1,10 +1,10 @@
-# HTTP Status for Humans
+# status - HTTP Status for Humans
 
 [![version](https://img.shields.io/pypi/v/python-status.svg)](https://pypi.python.org/pypi/python-status/)
 [![supported](https://img.shields.io/pypi/pyversions/python-status.svg)](https://pypi.python.org/pypi/python-status/)
 ![license](https://img.shields.io/pypi/l/python-status.svg)
 
-This is a very simple python library which provides human understandable HTTP status codes and improves readability of your code. You don't have to use those ugly HTTP status numbers, but use easily understandable strings.
+`status` is a very simple python library which provides human understandable HTTP status codes and improves readability of your code. You don't have to use those ugly HTTP status numbers, but use easily understandable status names.
 
 Don't:
 

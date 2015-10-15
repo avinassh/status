@@ -59,7 +59,7 @@ For every project I was creating a `status.py` file in the root directory. So I 
 
 # LICENSE:
 
-The mighty MIT license. Please check `LICENSE` for more details.
+Please check `LICENSE` for more details.
 
 
 # Credits:

@@ -21,7 +21,7 @@ But, do this:
             return ('That worked!', status.HTTP_201_CREATED)
 
 
-See, that looks so much better. You can use this library wherever you want, from custom python scripts to Django, Flask etc apps. For example, if you were playing with [Requests](python-requests.org):
+See, that looks so much better. You can use this library wherever you want, from custom python scripts to Django, Flask etc apps. For example, if you were playing with [Requests](http://python-requests.org):
 
     >>> response = requests.delete('http://some-url')
     >>> response.status_code == status.HTTP_204_NO_CONTENT

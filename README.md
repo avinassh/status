@@ -59,9 +59,9 @@ For every project I was creating a `status.py` file in the root directory. So I 
 
 # LICENSE:
 
-The mighty MIT license. Please check `LICENSE` for more details.
+Please check `LICENSE` for more details.
 
 
 # Credits:
 
-`status` has only one file `status.py` which is entirely copied from Django REST Framework's [`status.py`](https://github.com/tomchristie/django-rest-framework/blob/master/rest_framework/status.py) file.
+`status` is a fork of [Django Rest Framework](https://github.com/tomchristie/django-rest-framework)(DRF) and is independently maintained. The fork is entirely stripped of all DRF features and is not a submodule of DRF. And it doesn't come with any DRF functionalities.

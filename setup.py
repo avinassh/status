@@ -8,7 +8,7 @@ try:
 except (ImportError, IOError):
     long_description = open('README.md').read()
 
-version = '1'
+version = '1.0.1'
 
 setup(
     name='python-status',
@@ -17,12 +17,12 @@ setup(
     author_email='hi@avi.im',
     py_modules=['status'],
     url='https://github.com/avinassh/status/',
-    license='MIT',
+    license='BSD',
     description='HTTP Status for Humans',
     long_description=long_description,
     classifiers=[
         'Development Status :: 6 - Mature',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: POSIX',
         'Intended Audience :: Developers',
         'Natural Language :: English',

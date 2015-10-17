@@ -57,11 +57,11 @@ For list of available status codes check `status.py` file.
 For every project I was creating a `status.py` file in the root directory. So I thought it's better to release this as a package on PyPi and use it.
 
 
-# LICENSE:
+# License
 
 Please check `LICENSE` for more details.
 
 
-# Credits:
+# Credits
 
 `status` is a fork of [Django Rest Framework](https://github.com/tomchristie/django-rest-framework)(DRF) and is independently maintained. The fork is entirely stripped of all DRF features and is not a submodule of DRF. And it doesn't come with any DRF functionalities.

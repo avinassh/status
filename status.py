@@ -10,6 +10,10 @@ And RFC 6585 - http://tools.ietf.org/html/rfc6585
 from __future__ import unicode_literals
 
 
+class InvalidHTTPStatusCode(Exception):
+    pass
+
+
 class status(object):
 
     HTTP_100_CONTINUE = 100
@@ -85,4 +89,7 @@ class status(object):
     def describe(code):
         status_codes = {v: k for k, v in status.__dict__.iteritems()
                         if k.startswith('HTTP_')}
-        return status_codes[code]
+        try:
+            return status_codes[code]
+        except KeyError:
+            raise InvalidHTTPStatusCode

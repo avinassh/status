@@ -15,6 +15,9 @@ class InvalidHTTPStatusCode(Exception):
     pass
 
 
+# The class name violates PEP8, but that's okay. I like `status.HTTP_200_OK`
+# compared to `status.HTTP_200_OK` and `status` is not used as class in strict
+# sense and neither it requires to create `status` objects.
 class status(object):
 
     HTTP_100_CONTINUE = 100
@@ -88,8 +91,7 @@ class status(object):
 
     @staticmethod
     def describe(code):
-        status_dict = get_dict_iterable(status.__dict__)
-        status_codes = {v: k for k, v in status_dict
+        status_codes = {v: k for k, v in get_dict_iterable(status.__dict__)
                         if k.startswith('HTTP_')}
         try:
             return status_codes[code]

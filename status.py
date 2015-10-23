@@ -8,6 +8,7 @@ See RFC 2616 - http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
 And RFC 6585 - http://tools.ietf.org/html/rfc6585
 """
 from __future__ import unicode_literals
+import sys
 
 
 class InvalidHTTPStatusCode(Exception):
@@ -87,9 +88,21 @@ class status(object):
 
     @staticmethod
     def describe(code):
-        status_codes = {v: k for k, v in status.__dict__.iteritems()
+        status_dict = get_dict_iterable(status.__dict__)
+        status_codes = {v: k for k, v in status_dict
                         if k.startswith('HTTP_')}
         try:
             return status_codes[code]
         except KeyError:
             raise InvalidHTTPStatusCode
+
+
+# Some helper things
+
+# I should use `six` here, probably. but then `distutils` doesn't support
+# `install_requires`
+def get_dict_iterable(dictionary):
+    if sys.version_info[0] == 2:
+        return dictionary.iteritems()
+    else:
+        return dictionary.items()

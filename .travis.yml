@@ -1,0 +1,11 @@
+language: python
+python:
+  - 2.7
+  - 3.3
+  - 3.4
+install:
+  - pip install -r requirements-dev.txt
+script:
+  py.test tests --doctest-modules --pep8 -v --cov-report term-missing --cov=status
+after_success:
+  coveralls

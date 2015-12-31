@@ -39,6 +39,7 @@ def is_server_error(code):
 _STATUSES = {
     100: 'HTTP_100_CONTINUE',
     101: 'HTTP_101_SWITCHING_PROTOCOLS',
+    102: 'HTTP_102_Processing',
     200: 'HTTP_200_OK',
     201: 'HTTP_201_CREATED',
     202: 'HTTP_202_ACCEPTED',

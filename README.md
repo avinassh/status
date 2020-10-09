@@ -56,6 +56,10 @@ For list of available status codes check `status.py` file.
 
 For every project I was creating a `status.py` file in the root directory. So I thought it's better to release this as a package on PyPi and use it.
 
+# Alternatives
+
+Starting with Python 3.5, the standard library includes [HTTP Status](https://docs.python.org/3/library/http.html#http.HTTPStatus) enum.
+
 
 # License
 
